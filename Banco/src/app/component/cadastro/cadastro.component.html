@@ -1,0 +1,15 @@
+<div id="login">
+    
+    <fa-icon [icon]="faCity"></fa-icon>
+    <h2>Cadastrar Dados</h2>
+<form (ngSubmit)="cadastrarUsuario(form)" #form="ngForm">
+ 
+    <input type="text" placeholder="Digite seu nome" name="nome" ngModel required>
+    <input type="email" placeholder="Digite seu Email" name="email" ngModel required autofocus>
+    <input type="password" placeholder="Digite sua Senha" name="senha" ngModel required>
+  
+    
+    <button type="submit">Cadastrar</button>
+    <a href="/">Cancelar</a>
+  </form>
+  </div>

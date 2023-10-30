@@ -1,0 +1,39 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden; /* Oculta a rolagem horizontal */
+    
+}
+header{
+    color: #00A5F1;
+    display: flex;
+   justify-content: space-between;
+   padding: 20px;
+   height: 100px;
+   align-items: center;
+   font-size: 2.1em;
+   border-bottom: 4px solid #00A5F1;
+ 
+   
+
+}
+.operacoes{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    
+
+}
+.operacoes>button{
+    border: 3px solid #00A5F1;
+    border-radius: 3px;
+    background-color: aliceblue;
+    color: #00A5F1;
+    
+    width: 15em;
+    height: 6em;
+    margin: auto;
+   }

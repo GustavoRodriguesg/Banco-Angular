@@ -1,0 +1,14 @@
+<div id="login">
+    <fa-icon [icon]="faCity"></fa-icon>
+    <h2>Welcome</h2>
+    <form (ngSubmit)="verificarEmail()" #form="ngForm">
+      <input type="email" name="email" [(ngModel)]="usuario.email" placeholder="Email..." autofocus>
+      <input type="password" name="senha" [(ngModel)]="usuario.senha" placeholder="Senha...">
+      <input type="submit" value="Entrar">
+      <a href="/cadastro">Cadastro</a>
+    
+    </form>
+   
+    <router-outlet></router-outlet>
+  </div>
+  

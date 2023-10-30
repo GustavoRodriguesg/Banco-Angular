@@ -1,0 +1,27 @@
+<body>
+    <header>
+        <fa-icon [icon]="faCity"></fa-icon>
+            <p>{{ this.usuario.nome }}: Saldo:{{ this.usuario.saldo.toLocaleString('pt-BR', {
+                style: 'currency',
+                currency: 'BRL'
+            })}}</p>
+          
+        
+        
+    </header>
+    <div class="operacoes">
+        <Button (click)="depositar()">Depositar</Button>
+        <div *ngIf="deposito" class="realizacao">
+        
+            <input type="number" name="" id="" [(ngModel)]="saldo">
+            <button (click)="realizarDeposito()">Depositar</button>
+            <button (click)="depositar()">Cancelar</button>
+        </div>
+        <button (click)="sacar()">Sacar</button>
+        <div *ngIf="saque" class="realizacao">
+        
+            <input type="number" name="" id=""  [(ngModel)]="saldo">
+            <button  (click)="realizarSaque()">Sacar</button>
+            <button (click)="sacar()">Cancelar</button>
+        </div>
+    </div>
